@@ -1,0 +1,50 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract VariableContract {
+    // Four different types of variables
+    uint256 public uintVariable;
+    bool public boolVariable;
+    address public addressVariable;
+    string public stringVariable;
+
+    // Setter function for uintVariable
+    function setUintVariable(uint256 _value) public {
+        uintVariable = _value;
+    }
+
+    // Getter function for uintVariable
+    function getUintVariable() public view returns (uint256) {
+        return uintVariable;
+    }
+
+    // Setter function for boolVariable
+    function setBoolVariable(bool _value) public {
+        boolVariable = _value;
+    }
+
+    // Getter function for boolVariable
+    function getBoolVariable() public view returns (bool) {
+        return boolVariable;
+    }
+
+    // Setter function for addressVariable
+    function setAddressVariable(address _value) public {
+        addressVariable = _value;
+    }
+
+    // Getter function for addressVariable
+    function getAddressVariable() public view returns (address) {
+        return addressVariable;
+    }
+
+    // Setter function for stringVariable
+    function setStringVariable(string memory _value) public {
+        stringVariable = _value;
+    }
+
+    // Getter function for stringVariable
+    function getStringVariable() public view returns (string memory) {
+        return stringVariable;
+    }
+}
